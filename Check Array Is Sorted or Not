@@ -1,0 +1,22 @@
+package Recursion.ArrayUsingRecursion;
+
+public class SortedArrayBF {
+    public static void main(String[] args) {
+        int[] array = {1,3,44,55,9,10};
+        System.out.println(isSorted(array));
+    }
+
+    public static boolean isSorted(int[] array) {
+        int i = 0;
+        int j = 1;
+        while (j != array.length){
+            if (array[i]<array[j]) {
+                i++;
+                j++;
+            }else {
+                return false;
+            }
+        }
+        return true;
+    }
+}
