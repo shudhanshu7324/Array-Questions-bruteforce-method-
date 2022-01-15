@@ -1,0 +1,11 @@
+// https://leetcode.com/problems/build-array-from-permutation/submissions/
+
+class Solution {
+    public int[] buildArray(int[] input) {
+        int[] arr = new int[input.length];
+        for (int i = 0; i < input.length; i++) {
+            arr[i] = input[input[i]];
+        }
+        return arr;
+    }
+}
